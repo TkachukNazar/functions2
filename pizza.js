@@ -12,14 +12,10 @@ let pizzaPrice = {
   "піца чотири сири": 70,
 };
 function orderingPizza(pizza, size) {
-  alert(pizza);
-  alert(size);
   let str = "";
   if (pizzaNames[pizza] != undefined) {
     str += `Ваше замовлення: ${pizzaNames[pizza]} - ${size}шт`;
     str += `: ${pizzaPrice[pizzaNames[pizza]] * size} грн\n`;
-  } else {
-    alert("qua qua");
   }
   alert(str);
 }
